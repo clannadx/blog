@@ -13,6 +13,6 @@ const server = http.createServer((req, res) => {
 	require('./router').router(req,res);
 });
 
-server.listen(port, hostname, () => {
+server.listen(hostname, () => {
 	console.log(`Server running`);
 });
