@@ -5,7 +5,7 @@ const sequelize = new Sequelize('blog', 'root', 'saber', {
     host: 'localhost',
     port: 3306,
     dialect: 'mysql',
-    operatorsAliases : false,//禁用别名 
+    operatorsAliases : false,   //禁用别名 
     pool: {
         max: 5,
         min: 0,
