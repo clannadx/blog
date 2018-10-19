@@ -2,7 +2,7 @@ const path = require('path');
 const Sequelize = require('sequelize');
 
 const sequelize = new Sequelize('blog', 'root', 'saber', {
-    host: '94.191.26.194',
+    host: 'localhost',
     port: 3306,
     dialect: 'mysql',
     operatorsAliases : false,//禁用别名 
