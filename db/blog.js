@@ -2,8 +2,9 @@ const path = require('path');
 const Sequelize = require('sequelize');
 
 const sequelize = new Sequelize('blog', 'root', 'saber', {
-    host: 'localhost',
+    host: '94.191.26.194',
     dialect: 'mysql',
+    operatorsAliases : false,//禁用别名 
     pool: {
         max: 5,
         min: 0,
