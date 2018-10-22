@@ -1,6 +1,5 @@
 
 const url = require('url');
-const ip = require('ip');
 const log4js = require('log4js');
 const logger = log4js.getLogger();
 logger.level = 'info'
@@ -32,8 +31,8 @@ exports.router = function(req,res){
     let urlObj = url.parse(req.url);
     let pathname = urlObj.pathname;
     let action;
-    logger.info(req.method + ' ' + pathname + '  ip' + getClientIp(req))
-    
+    logger.info(req.method + ' ' + pathname + '  ip为:' + getClientIp(req))
+
     rules.forEach(rule=>{
         if(rule.pattern.test(pathname)){
             action = rule.action;
