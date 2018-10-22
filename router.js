@@ -22,7 +22,7 @@ exports.router = function(req,res){
     let pathname = urlObj.pathname;
     let action;
 
-    console.log(new Date() + " 1" + req.methods + " " + pathname)
+    console.log(new Date() + " " + req.methods + " " + pathname)
 
     rules.forEach(rule=>{
         if(rule.pattern.test(pathname)){
