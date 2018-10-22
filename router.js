@@ -21,6 +21,8 @@ exports.router = function(req,res){
     let urlObj = url.parse(req.url);
     let pathname = urlObj.pathname;
     let action;
+    
+    console.log(new Date() + " " + req.methods + " " + pathname)
 
     rules.forEach(rule=>{
         if(rule.pattern.test(pathname)){
