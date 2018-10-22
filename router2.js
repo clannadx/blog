@@ -32,8 +32,7 @@ exports.router = function(req,res){
     let urlObj = url.parse(req.url);
     let pathname = urlObj.pathname;
     let action;
-    logger.info(req.method + ' ' + pathname + 'ip' + ip.address())
-    logger.info(getClientIp(req));
+    logger.info(req.method + ' ' + pathname + '  ip' + getClientIp(req))
     
     rules.forEach(rule=>{
         if(rule.pattern.test(pathname)){
