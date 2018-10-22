@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
 			delete require.cache[key];
 		}
 	}
-	require('./router').router(req,res);
+	require('./router2').router(req,res);
 });
 
 server.listen(port, hostname, () => {
