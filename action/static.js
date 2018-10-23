@@ -17,9 +17,14 @@ module.exports = function(req,res){
 
     let urlObj = url.parse(req.url);
     let pathname = urlObj.pathname;
-
     if(pathname === '/'){
         pathname = defaultPath;
+    } else if(pathname === '/about'){
+        pathname = '/about.html'
+    } else if(pathname === '/posts') {
+        pathname = '/posts.html'
+    } else if(pathname === '/contact') {
+        pathname = '/contact.html'
     }
 
     let realPath = path.resolve(staticPath,'.'+pathname);

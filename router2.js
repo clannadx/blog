@@ -6,7 +6,7 @@ logger.level = 'info'
 
 const rules = [
     {
-        pattern:/^\/$/,
+        pattern:/^\/(about|posts|contact)?$/,
         action:'static'
     },
     {
@@ -38,7 +38,6 @@ exports.router = function(req,res){
             action = rule.action;
         }
     })
-
     if(action){
         require('./action/'+action)(req,res)
     }else{

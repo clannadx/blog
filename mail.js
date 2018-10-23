@@ -6,8 +6,8 @@ let transporter = nodemailer.createTransport({
   secureConnection: true,
   secure: true,
   auth: {
-    user: '625783534@qq.com',
-    pass: 'fcmermqlwzmrbfic' // qq邮箱需要的授权码
+    user: '624783534@qq.com',
+    pass: 'oplhrycpgxtdbejh' // qq邮箱需要的授权码
   }
 })
 
@@ -26,7 +26,7 @@ let transporter = nodemailer.createTransport({
       mailOptions.subject = subject
       mailOptions.content = content
       transporter.sendMail(mailOptions,(error,info) => {
-          console.log(`Message:${info}`)
+          console.log(`Message:${info.messageId}`)
           console.log(`send: ${error}`)
       })
     }
