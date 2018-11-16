@@ -53,9 +53,7 @@ module.exports = function(req,res){
                 res.end()
                 return;
             }
-
             let ext = path.extname(pathname);
-
             res.statusCode = 200;
             res.setHeader('Content-Type', mineTypeMap[ext] || 'application/octet-stream');
             res.end(data)
