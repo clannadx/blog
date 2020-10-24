@@ -1,7 +1,7 @@
 const path = require('path');
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('blog', 'root', 'saber', {
+const sequelize = new Sequelize('test', 'root', 'root', {
     host: 'localhost',
     port: 3306,
     dialect: 'mysql',
@@ -15,7 +15,7 @@ const sequelize = new Sequelize('blog', 'root', 'saber', {
 });
 
 //定义模型
-const Blog = sequelize.define('Blog', {
+const Blog = sequelize.define('Article', {
     id: {
         type: Sequelize.INTEGER, 
         primaryKey: true, 

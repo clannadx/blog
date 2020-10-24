@@ -1,7 +1,7 @@
 {
   "name": "myblog",
   "version": "1.0.0",
-  "description": "Nodejs实战课程blog项目",
+  "description": "Nodejs",
   "main": "server.js",
   "scripts": {
     "md2html": "node script/md2html",

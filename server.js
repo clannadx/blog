@@ -25,7 +25,7 @@ process.on('uncaughtException', function (err) {
 		mail.send('[服务器异常]' + err.toString(), err.stack)
 	}
 })
-console.log(a)
+// console.log(a)
 server.listen(port, hostname, () => {
 	console.log(`Server running`);
 });
