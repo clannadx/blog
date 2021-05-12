@@ -13,7 +13,7 @@
   "dependencies": {
     "log4js": "^3.0.6",
     "mysql2": "^1.5.3",
-    "nodemailer": "^4.6.8",
+    "nodemailer": "^6.4.16",
     "request": "^2.88.0",
     "sequelize": "^4.29.0"
   },
